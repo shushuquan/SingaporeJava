@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/code/01_多态" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/code/02_多态案例" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/code/03_抽象类" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/code/04_抽象类案例" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/code/05_接口" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/code/06_接口案例" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/code/01_常量" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/code/02_进制转换" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/code/04_数据类型" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/code/05_类型转换" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/code/06_算术运算符" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/code/07_赋值运算符" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/code/08_关系运算符" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/code/09_逻辑运算符" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
