@@ -1,18 +1,28 @@
-spring:
-  kafka:
-    bootstrap-servers: 192.168.228.128:9090
-    listener:
-      concurrency: 10
-      ack-mode: MANUAL_IMMEDIATE
-      poll-timeout: 1500
-    consumer:
-      group-id: kafka_cluster1
-      enable-auto-commit: false
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      properties: {session.timeout.ms: 6000, auto.offset.reset: earliest}
-    producer:
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
-      batch-size: 65536
-      buffer-memory: 524288
+#spring:
+#  kafka:
+#    bootstrap-servers: 192.168.228.128:9090 #设置kafka集群的地址
+#    listener:
+#      concurrency: 10
+#      ack-mode: MANUAL_IMMEDIATE
+#      poll-timeout: 1500
+#    consumer:
+#      group-id: kafka_cluster1
+#      enable-auto-commit: false
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      properties: {session.timeout.ms: 6000, auto.offset.reset: earliest}
+#    producer:
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer  #序列化器
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer  #序列化器
+#      batch-size: 65536  #每个partition的未发送消息大小，必须设置。只有数据积累到batch.size之后，sender才会发送数据。
+#      buffer-memory: 524288  #要大于batch.size，否则会报申请内存不足的错误
+#      #	数据在缓冲区中保留的时长,0表示立即发送<br>为了减少网络耗时，需要设置这个值<br>太大可能容易导致缓冲区满，
+#      # 阻塞消费者<br>太小容易频繁请求服务端，如果数据迟迟未达到batch.size，sender等待linger.time之后就会发送数据。
+#      linger.ms: 10000 #消息在缓冲区保留的时间，超过设置的值就会被提交到服务端
+#      retries: 0 #失败重试次数
+#      #max-block-ms: 60000 #最大阻塞时长
+#      #send-buffer-bytes: 131072 #发送数据时的缓存空间大小
+#      #request-timeout-ms: 3000 #等待请求响应的最大时间,超时则重发请求,超过重试次数将抛异常
+#      #reconnect-backoff-ms: 10 #连接失败时，当我们重新连接时的等待时间。这避免了客户端反复重连
+
+#spring.main.allow-bean-definition-overriding: true

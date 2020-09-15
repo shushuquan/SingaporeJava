@@ -14,6 +14,6 @@ import org.springframework.stereotype.Component;
 public class ConsumerDemo {
     @KafkaListener(topics = "topicTEST")
     public void listen (ConsumerRecord<?, ?> record){
-        System.out.printf("topic is %s, offset is %d, value is %s \n", record.topic(), record.offset(), record.value());
+        System.out.printf("topic is %s, offset is %d, timestamp is %s, value is %s \n", record.topic(), record.offset(), record.timestamp(),record.value());
     }
 }
